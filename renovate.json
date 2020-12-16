@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>rarkins/.github:renovate-config"
-  ]
+  ],
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [{
+    "updateTypes" :["major"],
+    "dependencyDashboardApproval": true
+  }]
 }
