@@ -4,6 +4,7 @@
   "ignorePaths": [
     "packages/docusaurus-1.x",
     "packages/docusaurus-init-1.x",
+    "packages/docusaurus-migrate/src/__tests__",
     "website-1.x"
   ],
   "rangeStrategy": "replace",
