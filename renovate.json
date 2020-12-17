@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
+  "ignorePaths": [
+    "packages/docusaurus-1.x",
+    "packages/docusaurus-init-1.x",
+    "website-1.x"
+  ],
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "description": "Refresh lock file weekly on mondays",
