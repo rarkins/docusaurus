@@ -16,8 +16,6 @@
   "stabilityDays": 3,
   "labels": ["dependencies"],
   "semanticCommits": true,
-  "semanticCommitType": "chore",
-  "semanticCommitScope": "v2",
   "packageRules": [
     {
       "description": "Require approval before proposing any major updates",
@@ -27,6 +25,14 @@
     {
       "paths": ["**/__fixtures__/**", "**/__tests__/**"],
       "enabled": false
+    },
+    {
+      "packagePatterns": ["*"],
+      "semanticCommitType": "chore"      
+    },
+    {
+      "paths": ["packages/*"],
+      "semanticCommitScope": "v2"
     }
   ]
 }
