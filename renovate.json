@@ -6,6 +6,7 @@
     "packages/docusaurus-init-1.x",
     "website-1.x"
   ],
+  "rangeStrategy": "replace",
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "description": "Refresh lock file weekly on mondays",
@@ -20,7 +21,7 @@
       "dependencyDashboardApproval": true
     },
     {
-      "paths": ["**/__fixtures__/**", ""**/__tests__/**""],
+      "paths": ["**/__fixtures__/**", "**/__tests__/**"],
       "enabled": false
     }
   ]
