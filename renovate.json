@@ -18,6 +18,10 @@
       "description": "Require approval before proposing any major updates",
       "updateTypes": ["major"],
       "dependencyDashboardApproval": true
+    },
+    {
+      "paths": ["**/__fixtures__/**", ""**/__tests__/**""],
+      "enabled": false
     }
   ]
 }
