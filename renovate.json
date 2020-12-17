@@ -6,7 +6,7 @@
     "packages/docusaurus/src/server/versions/__fixtures__",
     "packages/docusaurus-1.x",
     "packages/docusaurus-init-1.x",
-    "packages/docusaurus-migrate/src/__tests__"
+    "packages/docusaurus-migrate/src/__tests__",
     "website-1.x"
   ],
   "rangeStrategy": "replace",
