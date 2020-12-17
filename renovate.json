@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "ignorePaths": [
+    "examples/",
     "packages/docusaurus/src/server/versions/__fixtures__",
     "packages/docusaurus-1.x",
     "packages/docusaurus-init-1.x",
