@@ -15,6 +15,9 @@
   },
   "stabilityDays": 3,
   "labels": ["dependencies"],
+  "semanticCommits": true,
+  "semanticCommitType": "chore",
+  "semanticCommitScope": "v2",
   "packageRules": [
     {
       "description": "Require approval before proposing any major updates",
