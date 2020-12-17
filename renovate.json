@@ -28,7 +28,8 @@
     },
     {
       "packagePatterns": ["*"],
-      "semanticCommitType": "chore"      
+      "semanticCommitType": "chore",
+      "semanticCommitScope": null
     },
     {
       "paths": ["packages/"],
