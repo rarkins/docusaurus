@@ -23,15 +23,18 @@
       "dependencyDashboardApproval": true
     },
     {
+      "description": "Disable any fixtures or tests missed in our ignorePaths",
       "paths": ["**/__fixtures__/**", "**/__tests__/**"],
       "enabled": false
     },
     {
+      "description": "Reset semantic commit type/scope for all packages",
       "packagePatterns": ["*"],
       "semanticCommitType": "chore",
       "semanticCommitScope": null
     },
     {
+      "description": "Use v2 scope for anything in package/*",
       "paths": ["packages/"],
       "semanticCommitScope": "v2"
     }
