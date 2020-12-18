@@ -54,6 +54,16 @@
       "description": "Group postcss packages together",
       "packagePatterns": ["^postcss"],
       "groupName": "postcss packages"
+    },
+    {
+      "description": "Group jest packages together",
+      "packagePatterns": ["jest"],
+      "groupName": "jest packages"
+    },
+    {
+      "description": "Group react packages together",
+      "packagePatterns": ["react"],
+      "groupName": "react packages"
     }
   ]
 }
