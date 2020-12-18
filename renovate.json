@@ -1,0 +1,59 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "ignorePaths": [
+    "examples/",
+    "packages/docusaurus/src/server/versions/__fixtures__",
+    "packages/docusaurus-1.x",
+    "packages/docusaurus-init-1.x",
+    "packages/docusaurus-migrate/src/__tests__",
+    "website-1.x"
+  ],
+  "rangeStrategy": "replace",
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "description": "Refresh lock file weekly on mondays",
+    "enabled": true
+  },
+  "stabilityDays": 3,
+  "labels": ["dependencies"],
+  "semanticCommits": true,
+  "packageRules": [
+    {
+      "description": "Require approval before proposing any major updates",
+      "updateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Disable any fixtures or tests missed in our ignorePaths",
+      "paths": ["**/__fixtures__/**", "**/__tests__/**"],
+      "enabled": false
+    },
+    {
+      "description": "Reset semantic commit type/scope for all packages",
+      "packagePatterns": ["*"],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": null
+    },
+    {
+      "description": "Use v2 scope for anything in package/*",
+      "paths": ["packages/"],
+      "semanticCommitScope": "v2"
+    },
+    {
+      "description": "Group eslint packages together",
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint packages"
+    },
+    {
+      "description": "Group webpack packages together",
+      "packagePatterns": ["^webpack"],
+      "groupName": "webpack packages"
+    },
+    {
+      "description": "Group postcss packages together",
+      "packagePatterns": ["^postcss"],
+      "groupName": "postcss packages"
+    }
+  ]
+}
