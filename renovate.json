@@ -17,53 +17,53 @@
   },
   "stabilityDays": 3,
   "labels": ["dependencies"],
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "packageRules": [
     {
       "description": "Require approval before proposing any major updates",
-      "updateTypes": ["major"],
-      "dependencyDashboardApproval": true
+      "dependencyDashboardApproval": true,
+      "matchUpdateTypes": ["major"]
     },
     {
       "description": "Disable any fixtures or tests missed in our ignorePaths",
-      "paths": ["**/__fixtures__/**", "**/__tests__/**"],
-      "enabled": false
+      "enabled": false,
+      "matchPaths": ["**/__fixtures__/**", "**/__tests__/**"]
     },
     {
       "description": "Reset semantic commit type/scope for all packages",
-      "packagePatterns": ["*"],
       "semanticCommitType": "chore",
-      "semanticCommitScope": null
+      "semanticCommitScope": null,
+      "matchPackagePatterns": ["*"]
     },
     {
       "description": "Use v2 scope for anything in package/*",
-      "paths": ["packages/"],
-      "semanticCommitScope": "v2"
+      "semanticCommitScope": "v2",
+      "matchPaths": ["packages/"]
     },
     {
       "description": "Group eslint packages together",
-      "packagePatterns": ["^eslint"],
-      "groupName": "eslint packages"
+      "groupName": "eslint packages",
+      "matchPackagePatterns": ["^eslint"]
     },
     {
       "description": "Group webpack packages together",
-      "packagePatterns": ["^webpack"],
-      "groupName": "webpack packages"
+      "groupName": "webpack packages",
+      "matchPackagePatterns": ["^webpack"]
     },
     {
       "description": "Group postcss packages together",
-      "packagePatterns": ["^postcss"],
-      "groupName": "postcss packages"
+      "groupName": "postcss packages",
+      "matchPackagePatterns": ["^postcss"]
     },
     {
       "description": "Group jest packages together",
-      "packagePatterns": ["jest"],
-      "groupName": "jest packages"
+      "groupName": "jest packages",
+      "matchPackagePatterns": ["jest"]
     },
     {
       "description": "Group react packages together",
-      "packagePatterns": ["react"],
-      "groupName": "react packages"
+      "groupName": "react packages",
+      "matchPackagePatterns": ["react"]
     }
   ]
 }
